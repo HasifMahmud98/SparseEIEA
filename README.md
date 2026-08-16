@@ -318,7 +318,7 @@ Top-K = 500
 | FBDB15K | 0.0004 | 0.0004 | 629 MB | 73.6 MB | 100.0% |
 | FBYG15K | 0.0002 | 0.0001 | 478 MB | 64.1 MB | 100.0% |
 
-<div align="center">
+<div align="left">
 <img src="picture/result.png" width="95%" alt="Example result"/>
 </div>
 ---
