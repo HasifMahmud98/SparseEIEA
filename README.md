@@ -321,6 +321,7 @@ Top-K = 500
 <div align="left">
 <img src="picture/result.png" width="95%" alt="Example result"/>
 </div>
+
 ---
 
 ## Key Findings
