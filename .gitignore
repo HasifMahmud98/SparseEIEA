@@ -182,7 +182,6 @@ results/
 logs/
 *.log
 *.csv
-*.png
 *.jpg
 *.pdf
 *.svg

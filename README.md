@@ -37,7 +37,7 @@ However, existing alignment approaches usually construct a complete similarity m
 ## 🏗️ Framework
 
 <div align="center">
-<img src="docs/framework.png" width="95%" alt="SparseEIEA Framework"/>
+<img src="https://github.com/HasifMahmud98/SparseEIEA/picture/framework.png" width="95%" alt="SparseEIEA Framework"/>
 </div>
 
 The framework consists of four major components:
@@ -100,8 +100,8 @@ The framework supports:
 
 ## 📰 News
 
-- **2025** — SparseEIEA framework developed for scalable multi-modal entity alignment.
-- **2025** — Paper:
+- **2026** — SparseEIEA framework developed for scalable multi-modal entity alignment.
+- **2026** — Paper:
 
 > "SparseEIEA: Scalable Multi-Modal Entity Alignment with LSH Approximation"
 
@@ -160,6 +160,44 @@ SparseEIEA is evaluated on standard multi-modal entity alignment benchmarks:
 | DBP15K-FR-EN | French-English DBpedia |
 | FBDB15K | Freebase-DBpedia |
 | FBYG15K | Freebase-YAGO |
+
+## ⬇️ How to Download the Datasets
+
+SparseEIEA uses standard multi-modal entity-alignment datasets. The required DBP15K, FBDB15K, and FBYG15K resources can be obtained from public MMEA research repositories.
+
+### Option 1 — MEAformer dataset resources
+
+The [MEAformer repository](https://github.com/zjukg/MEAformer) documents the DBP15K, FBDB15K, and FBYG15K datasets and their expected directory structures.
+
+### Option 2 — Original MMEA/MMKB resources
+
+For the cross-KG datasets and multi-modal resources, refer to the [MMEA repository](https://github.com/liyichen-cly/MMEA) and the [MMKB repository](https://github.com/mniepert/mmkb).
+
+After downloading and extracting the datasets, place them under:
+
+```text
+data/mmkg/
+```
+
+### Required directory structure
+
+Make sure the downloaded files follow this structure:
+
+```text
+SparseEIEA/
+└── data/
+    └── mmkg/
+        ├── DBP15K/
+        │   ├── zh_en/
+        │   ├── ja_en/
+        │   └── fr_en/
+        ├── FBDB15K/
+        │   └── norm/
+        └── FBYG15K/
+            └── norm/
+```
+
+> **Note:** Dataset files are not redistributed with SparseEIEA. Download them from the original/public repositories and follow the respective dataset licenses and usage conditions.
 
 Download the dataset package and extract:
 
@@ -264,6 +302,8 @@ CONFIG = {
 
 ## Memory Efficiency and Alignment Performance
 
+The following results are reported for the **Top-K = 500** evaluation setting. The framework figure is available at `docs/framework.png`.
+
 Evaluation setting:
 
 ```
@@ -278,6 +318,9 @@ Top-K = 500
 | FBDB15K | 0.0004 | 0.0004 | 629 MB | 73.6 MB | 100.0% |
 | FBYG15K | 0.0002 | 0.0001 | 478 MB | 64.1 MB | 100.0% |
 
+<div align="center">
+<img src="https://github.com/HasifMahmud98/SparseEIEA/picture/result.png" width="95%" alt="Example result"/>
+</div>
 ---
 
 ## Key Findings
@@ -334,7 +377,7 @@ SparseEIEA builds upon several important research directions:
 
 ### Multi-Modal Entity Alignment
 
-- Explicit-Implicit Entity Alignment Method in Multi-modal Knowledge Graphs (EIEA, KDD 2025)
+- Explicit-Implicit Entity Alignment Method in Multi-modal Knowledge Graphs (EIEA, KDD 2026)
 
 ### Modality-Freezing Entity Alignment
 
@@ -355,13 +398,13 @@ SparseEIEA builds upon several important research directions:
 If you use SparseEIEA in your research, please cite:
 
 ```bibtex
-@misc{SparseEIEA2025,
+@misc{SparseEIEA2026,
 
-author = {Your Name},
+author = {Hasif Mahmud Mahim and Tiexin Wang},
 
 title = {SparseEIEA: Scalable Multi-Modal Entity Alignment with LSH Approximation},
 
-year = {2025},
+year = {2026},
 
 publisher = {GitHub},
 
