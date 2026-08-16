@@ -37,7 +37,7 @@ However, existing alignment approaches usually construct a complete similarity m
 ## 🏗️ Framework
 
 <div align="center">
-<img src="https://github.com/HasifMahmud98/SparseEIEA/picture/framework.png" width="95%" alt="SparseEIEA Framework"/>
+<img src="picture/framework.png" width="95%" alt="SparseEIEA Framework"/>
 </div>
 
 The framework consists of four major components:
@@ -319,7 +319,7 @@ Top-K = 500
 | FBYG15K | 0.0002 | 0.0001 | 478 MB | 64.1 MB | 100.0% |
 
 <div align="center">
-<img src="https://github.com/HasifMahmud98/SparseEIEA/picture/result.png" width="95%" alt="Example result"/>
+<img src="picture/result.png" width="95%" alt="Example result"/>
 </div>
 ---
 
