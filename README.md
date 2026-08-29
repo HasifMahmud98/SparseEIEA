@@ -12,7 +12,7 @@
 
 ### Key Features
 
-* **Sparse Profit Matrix** — Retains only the top-k candidate matches per entity, reducing memory complexity from \(O(N^2)\) to \(O(N \cdot k)\)
+* **Sparse Profit Matrix** — Retains only the top-k candidate matches per entity, reducing memory complexity from **O(N²)** to **O(N·k)**
 * **Sparse Sinkhorn Assignment** — Performs efficient sparse assignment with scalable optimization
 * **FP16 Precision** — Uses half-precision computation to further reduce memory consumption
 * **High Accuracy Preservation** — Preserves more than **98% of dense alignment accuracy**
