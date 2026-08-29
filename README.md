@@ -281,7 +281,7 @@ If you use SparseEIEA in your research, please cite:
 @article{hasif2026sparseeiea,
   title={SparseEIEA: A Memory-Efficient Approach for Multi-Modal Entity Alignment via Top-k Sparsification},
   author={Hasif Mahmud Mahim and Tiexin Wang},
-  journal={arXiv preprint},
+  conference={The 14th International Academic Conference for Graduates,NUAA, preprint},
   year={2026}
 }
 ```
