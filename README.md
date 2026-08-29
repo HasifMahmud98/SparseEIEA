@@ -279,7 +279,7 @@ If you use SparseEIEA in your research, please cite:
 
 ```bibtex
 @article{hasif2026sparseeiea,
-  title={SparseEIEA: Memory-Efficient Multi-Modal Entity Alignment via Top-k Sparsification},
+  title={SparseEIEA: A Memory-Efficient Approach for Multi-Modal Entity Alignment via Top-k Sparsification},
   author={Hasif Mahmud Mahim and Tiexin Wang},
   journal={arXiv preprint},
   year={2026}
