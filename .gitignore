@@ -21,11 +21,6 @@ build/
 data/ECS_results/
 data/MMEA-data/
 
-# Results
-results/*.txt
-results/*.csv
-results/*.json
-
 # Jupyter
 .ipynb_checkpoints/
 *.ipynb
