@@ -1,20 +1,14 @@
-# SparseEIEA
+# 🚀 SparseEIEA: A Memory-Efficient Approach for Multi-Modal Entity Alignment via Top-k Sparsification
 
-**Memory-Efficient Multi-Modal Entity Alignment via Top-k Sparsification**
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?logo=PyTorch&logoColor=white)](https://pytorch.org/)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-1.10+-red.svg)](https://pytorch.org/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-
+> **SparseEIEA** is a memory-efficient approach for **multi-modal entity alignment (MMEA)** in large-scale knowledge graphs.  
+> It replaces dense representation with a deterministic **top-k sparsification** strategy that retains only the most promising candidate matches for each entity, reducing memory complexity from **O(N²)** to **O(N·k)** while maintaining comparable alignment accuracy.
+>Combined with **Sparse Sinkhorn assignment** and **FP16 half-precision computation**, SparseEIEA achieves substantial memory savings while preserving alignment performance.
 ---
-
-## Overview
-
-SparseEIEA is a memory-efficient framework for **multi-modal entity alignment** that addresses the excessive memory requirements of dense assignment-based approaches.
-
-Conventional entity alignment methods construct a dense \(O(N^2)\) profit matrix, making large-scale alignment computationally expensive and memory-intensive. SparseEIEA replaces this dense representation with a deterministic **top-k sparsification** strategy that retains only the most promising candidate matches for each entity, reducing memory complexity from \(O(N^2)\) to \(O(N \cdot k)\).
-
-Combined with **Sparse Sinkhorn assignment** and **FP16 half-precision computation**, SparseEIEA achieves substantial memory savings while preserving alignment performance.
 
 ### Key Features
 
@@ -28,6 +22,10 @@ Combined with **Sparse Sinkhorn assignment** and **FP16 half-precision computati
 ---
 
 ## Framework
+
+<div align="center">
+<img src="picture/framework.png" width="100%" alt="SparseEIEA Framework"/>
+</div>
 
 SparseEIEA consists of three main stages:
 
@@ -93,8 +91,6 @@ SparseEIEA/
 │   │       ├── FB15K-DB15K/
 │   │       └── FB15K-YAGO15K/
 │   │
-│   ├── MMEA_name/
-│   │
 │   └── MMEA-data/
 │       ├── seed0.2/
 │       │   ├── FB15K-DB15K/
@@ -120,8 +116,6 @@ SparseEIEA/
 │
 └── requirements.txt
 ```
-
-> **Note:** Based on the URLs provided in the original datasets, crawling techniques were used to obtain entity name information. However, some original URLs are no longer available, resulting in missing entity names for certain FB15K entities. The collected entity name information is provided in the `MMEA_name` directory.
 
 ---
 
@@ -201,6 +195,12 @@ python experiments/run_benchmark.py \
 
 # Results
 
+## SparseEIEA PERFORMANCE ON FB15K-DB15K AND FB15K-YAGO15K
+
+<div align="center">
+<img src="picture/result.png" width="100%" alt="SparseEIEA result"/>
+</div>
+
 ## SparseEIEA Performance
 
 | Dataset       | Seed |    k |     Hits@1 | Hits@10 |   MRR | Total Peak (MB) | Memory Reduction |
@@ -278,7 +278,7 @@ Each result file contains:
 If you use SparseEIEA in your research, please cite:
 
 ```bibtex
-@article{mahim2026sparseeiea,
+@article{hasif2026sparseeiea,
   title={SparseEIEA: Memory-Efficient Multi-Modal Entity Alignment via Top-k Sparsification},
   author={Hasif Mahmud Mahim and Tiexin Wang},
   journal={arXiv preprint},
@@ -288,15 +288,9 @@ If you use SparseEIEA in your research, please cite:
 
 ---
 
-# License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
 # Contact
 
-* **Hasif Mahmud Mahim** — [hasifmahmudmahim@nuaa.edu.cn](mailto:hasifmahmudmahim@nuaa.edu.cn)
+* **Hasif Mahmud Mahim** — [hasifmahmud98@gmail.com](mailto:hasifmahmud98@gmail.com)
 * **Tiexin Wang** — [tiexin.wang@nuaa.edu.cn](mailto:tiexin.wang@nuaa.edu.cn)
 
 ---
